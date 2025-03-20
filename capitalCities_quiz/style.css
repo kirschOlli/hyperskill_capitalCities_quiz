@@ -1,0 +1,67 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    background-image: url("bild/Europe_countries_map_en.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Sigmar, cursive;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quiz-main {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 50vh;
+    width: 50vw;
+}
+
+.card{
+    display: flex;
+    align-self: auto;
+    justify-self: center;
+    transition: 1s linear;
+    backface-visibility: hidden;
+}
+
+
+
+.question{
+    backface-visibility: inherit;
+    background-color: aqua;
+    height: 15em;
+    width: 15em;
+    z-index: 2;
+}
+
+.answer{
+    backface-visibility: inherit;
+    background-color: white;
+    height: 15em;
+    width: 15em;
+    position: absolute;
+    align-self: flex-start;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
